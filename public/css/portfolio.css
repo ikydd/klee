@@ -1,0 +1,274 @@
+/* CSS for the admin backend */
+
+/*#### BODY & OVERALL LAYOUT ####*/
+#canvas{width:60em; margin: 0em 0em 0em 12em;border:solid 0px black;padding:1em 0em 1em 0em;}
+#content{position:relative;margin:3em 0em 0em 0em;}
+
+/*#### FONTS ####*/
+
+/*** PLAIN BLACK ***/
+	/*plain black - sans-serif*/
+		body
+		{font-family:sans-serif; font-size:0.8em;}
+	/*plain-black - sans-serif italic*/
+		p.picturecaption
+		{font-style:italic;}
+	
+/*** ROYAL BLUE 036 ***/
+	/*royal blue - smallish - sans-serif ALL CAPS (buttons and standalone links)*/
+		input.actionbutton, a.actionbutton, legend, span.showheader, a#back, a.pagenumber, #versioninfo a
+		{color:#036; font-family:sans-serif;text-decoration:none;font-size:0.85em;text-transform:uppercase;font-weight:bold;font-style:normal;}
+	/*royal blue - smallish - sans-serif ALL CAPS (buttons and standalone links)*/
+		div.picturetile legend
+		{color:#036; font-family:sans-serif;text-decoration:none;font-size:0.85em;text-transform:none;font-weight:bold;font-style:normal;}
+	/*royal blue - medium - sans-serif (in-text links)*/
+		a.picturelink
+		{color:#036;font-family:sans-serif;text-transform:none;letter-spacing:0.1em;font-weight:normal;text-decoration:none;}
+
+/*** DEEP RED 903 ***/	/* PURPLE: 662d91 ORANGE: ff7e00 */
+	/*deep red - smallish - sans-serif ALL CAPS (buttons and standalone links)*/
+		a.actionbutton:hover, input.actionbutton_hover, a#back:hover, a.pagenumber:hover, #versioninfo a:hover, #nocollections, #nopictures
+		{color:#903; font-family:sans-serif; text-decoration:none; font-size:0.85em;text-transform:uppercase;font-weight:bold;font-style:normal;}
+	/*deep red - smallish thin - serif*/
+		#errors, #uploaded caption
+		{color:#903;font-family:serif;font-size:1.2em;letter-spacing:0.2em;font-weight:lighter;font-style:italic;}
+	/*deep red - small thin - serif*/
+		.error
+		{color:#903;font-family:serif;font-size:1em;letter-spacing:0.2em;font-weight:lighter;font-style:italic;}
+	/*deep red - smallish lowercase sans-serif*/
+		#navmenu a:hover, #navmenu .navselected
+		{color:#903;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1.2em;font-weight:normal;}
+	/*deep red - smallish lowercase italic sans-serif*/
+		div#portfoliomenu a.portfolioselected, div#portfoliomenu a:hover
+		{color:#903;text-transform:lowercase;text-decoration:none;font-weight:normal;font-style:italic;}
+		
+/*** TANGERINE ff7e00 ***/	/* PURPLE: 662d91
+	/*tangerine - smallish lowercase sans-serif*/
+		#navmenu a:hover, #navmenu .navselected
+		{color:#ff7e00;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1.2em;font-weight:normal;}
+	/*tangerine - smallish lowercase italic sans-serif*/
+		div#portfoliomenu a.portfolioselected, div#portfoliomenu a:hover
+		{color:#ff7e00;text-transform:lowercase;text-decoration:none;font-weight:normal;font-style:italic;}
+	/*tangerine - medium - sans-serif (in-text links)*/
+		a.picturelink:hover
+		{color:#ff7e00;font-family:sans-serif;text-transform:none;letter-spacing:0.1em;font-weight:normal;text-decoration:none;}
+	/*tangerine - smallish lowercase sans-serif*/
+		#portfoliopictures a:hover
+		{color:#ff7e00;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1em;font-weight:normal;text-decoration:underline;}
+		
+/*** GREY BLUE 69c ***/
+	/*grey-blue - large italic bold sans-serif uppercase*/
+		h3.sectionheader
+		{color:#61a6ea;letter-spacing:0.3em;font-size:1em;font-family:sans-serif;text-transform:uppercase;}	
+	/*grey-blue - large italic bold serif lowercase*/
+		h3.picturetitle
+		{color:#61a6ea;letter-spacing:0.3em;font-size:1em;font-family:sans-serif;text-transform:lowercase;}
+	/*grey-blue - large italic bold serif*/
+		h2.pageheader, h2.collectionheader
+		{color:#61a6ea;letter-spacing:0.3em;font-size:1.3em;font-family:sans-serif;text-transform:lowercase;}
+	/*grey blue - large lowercase sans-serif*/
+		#mainheader a
+		{color:#61a6ea;text-transform:lowercase;letter-spacing:1em;text-decoration:none;}
+	/*grey blue - large lowercase sans-serif*/
+		#mainheader span#whitty
+		{color:#61a6ea;text-transform:lowercase;letter-spacing:1em;text-decoration:none;}
+	/*grey blue - smallish lowercase sans-serif*/
+		#portfoliopictures a
+		{color:#61a6ea;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1em;font-weight:normal;}
+		
+/*** LIGHT GREY ***/
+	/*light grey - medium italic sans-serif*/
+		.rowheader label
+		{color:#999;font-style:italic;}
+	/*light grey - medium italic serif*/
+		#versioninfo span
+		{color:#999;font-family:serif; font-style:italic; font-size:1.1em;letter-spacing:0.1em;}
+	/*light grey - large lowercase sans-serif*/
+		#mainheader span#tom
+		{color:#999;text-transform:lowercase;letter-spacing:1em;}
+	/*light grey - smallish lowercase sans-serif*/
+		#navmenu a
+		{color:#999;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1.2em;font-weight:normal;}	
+	/*light grey - smallish lowercase sans-serif*/
+		p.collectiondescription
+		{color:#999;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1em;font-weight:normal;}	
+	/*light grey - smallish lowercase sans-serif*/
+		p.picturecaption
+		{color:#999;text-transform:lowercase;text-decoration:none;letter-spacing:0.1em;font-size:1em;font-weight:normal;}
+	/*light grey - smallish lowercase sans-serif*/
+		div#portfoliomenu a
+		{color:#999;text-transform:lowercase;text-decoration:none;font-weight:normal;font-style:italic;}
+		
+	/*light grey - smallish lowercase sans-serif*/
+		p.collectiondescription
+		{color:#999;text-transform:lowercase;text-decoration:none;letter-spacing:0.3em;font-size:1em;font-weight:normal;}
+
+/*#### PADDING & BORDERS ####*/
+
+/*** ROYAL BLUE ***/
+	/*royal blue 1px border all-sides*/
+		#none	
+		{border:solid #036 1px;}
+	/*royal blue 1px border all-sides medium-space*/
+		#none
+		{padding:0.3em 0.3em 0.3em 0.3em; border:solid 1px #036;}
+		
+/*** SKY BLUE ***/
+	/*sky blue 1px border all-sides close*/
+		input.actionbutton, a.actionbutton, a#back, a.pagenumber, #versioninfo a
+		{padding:0em 0.3em;border:solid 1px #9be;}
+	/*sky blue 1px border bottom only close*/
+		.collectionheader, h2.pageheader
+		{padding:0.5em 0.5em;border:solid 1px #9be;border-top:0px;border-left:0px;border-right:0px;}
+	/*sky blue double 1px border all-sides close*/
+		div.pagenumbers a.thispage
+		{border:double 3px #9be;}
+
+/*** DEEP RED ***/
+	/*deep red 1px border all-sides close*/
+		a.actionbutton:hover, input.actionbutton_hover, a#back:hover, a.pagenumber:hover, #versioninfo a:hover
+		{padding:0em 0.3em;border:solid 1px #903;}
+	/*deep red 1px double-border all-sides close*/
+		div.pagenumbers a.thispage:hover
+		{padding:0em 0.3em;border:double 3px #903;}
+	/*deep red 1px border bottom only close*/
+		a:hover.titleedit
+		{padding:0em 0.3em;border-top:0px;border-left:0px;border-right:0px;}
+	
+/*** GREY BLUE ***/
+	/*grey-blue 1px border all-sides*/
+		fieldset
+		{border:1px solid #69c}
+	/*grey-blue 1px border left+right*/
+		legend
+		{padding:0.2em 2em;border-right:#69c 1px solid;border-left:#69c 1px solid;}
+
+/*** TEXTAREA ***/
+/* specific styling for textareas specifically */
+	textarea
+	{font-family:sans-serif;}
+
+/*#### MARGINS, SPACING & OTHER STUFF ####*/
+
+/*##### MAIN PAGE #####*/
+
+/* HEADER */
+#mainheader span{margin:0.0em;}
+
+/* PORTFOLIO PAGE */
+
+#portfoliomenu{width:14em;float:left;}
+#portfoliomenu a{display:block;}
+
+#portfoliopictures{width:40em;float:left;}
+#portfoliopictures .picturetitle{position:relative;left:2em;}
+#portfoliopictures .collectionheader {margin:0em 0em 2em 0em;}
+#portfoliopictures .collectionheader span{position:relative;left:2em;}
+#portfoliopictures .collectiondescription{margin-bottom:2em;}
+.portfoliopicture{margin:3em 0em;}
+img.pictureimage{max-width:525px;}
+
+#portfoliopictures a img{border-style:none;}
+
+/* ABOUT */
+
+.pageheader{position:relative;margin:2em;}
+
+#about{width:45em;}
+#about p{text-align:justify;}
+
+/*##### ADMINSTRATION AND OTHER STUFF #####*/
+
+/* BACK BUTTON AND SIDEBAR */
+/*
+	font : royal blue, uppercase
+	border: sky blue close 1px solid
+*/
+a#back:before{content:'<< ';}
+div#sidebar{margin:0em 0em 2em 0em;}
+
+/* PAGE NUMBERS *
+/*
+	font : royal blue, uppercase
+	border: sky blue close 1px solid
+*/
+div.pagenumbers a{margin:0.3em;}
+
+/* ADMIN FORMS */
+/*
+	horizontal headers : light grey, sans-serif, italic, normal-case
+	legend : uppercase, royal blue, L/R borders (sky blue)
+	border : sky blue 1px solid
+*/
+	
+.adminform{width:45em;margin:3em;}
+.adminform fieldset{padding:2em;}
+.adminform .rowheader{text-align:right;padding-right:1em;}
+.adminform .inputbox {width:25em;}
+.adminform tr.submitrow{text-align:right;}
+.adminform tr.submitrow input{margin:2em 2em 0em 2em;}
+.adminform legend{margin:0em 0em 1em 0em;}
+
+#collections #editform .titlerow{width:20em;}
+#collections td table{margin-top:2em;}
+#collections .adminform #description{height:10em;}
+#collections select{width:15em;}
+#collections select.small{width:5em;}
+#collections #orderchart td.title{width:25em;}
+#collections #orderchart th#title{width:25em;}
+#collections #orderchart .submitrow{padding-top:2em;}
+#collections #orderchart table.show{margin:1em;}
+
+#pictures .adminform #caption{height:5em;}
+#pictures #editform img.thumbnail{max-width:40em;max-height:40em;}
+#pictures #editform #imagecell{text-align:center;padding-bottom:2em;}
+
+.actionbutton, .actionbutton:hover, .actionbutton_hover{min-width:7em;background-color:transparent;}
+
+/* 'SHOW' TABLES */
+/*
+	vertical headers : uppercase, royal blue
+	border : sky blue 1px solid top of rows only, not header row
+*/
+.show{border-collapse:collapse; margin:3em;text-align:center;}
+.show td{padding:0.6em;border:solid 1px #9be;border-bottom:0px;border-left:0px;border-right:0px;}
+.show th{padding:0.6em;}
+
+#collections .show .picturelink{display:block;}
+#collections .show td.title{width:8em;}
+#collections .show td.description{width:25em;}
+#collections .show td.slug{width:6em;}
+#collections .show th#title{width:8em;}
+#collections .show th#description{width:25em;}
+#collections .show th#slug{width:6em;}
+#collections .show td.edit{width:2em;}
+#collections .show td.delete{width:2em;}
+#collections .show tr .pictures{text-align:left;}
+#collections .show tr .description{text-align:left;}
+#collections .show tr.picturerow td{border:0px;}
+
+#pictures .show td{padding:0.6em;}
+#pictures .show td.picture{width:9em;}
+#pictures .show td.caption{text-align:left;vertical-align:top;width:18em;}
+#pictures .show td.title{width:8em;}
+#pictures .show th#picture{width:9em;}
+#pictures .show th#caption{width:18em;}
+#pictures .show th#title{width:8em;}
+#pictures .show td.edit{width:2em;}
+#pictures .show td.delete{width:2em;}
+#pictures .show td.picture img.thumbnail{max-height:100px;max-width:80px;}
+
+#profile .show td{width:8em;text-align:center;}
+#profile  #show {margin:3em;width:32em;}
+#profile #actions {text-align:right; padding:0em 3em 2em 0em;}
+
+/* nav menu */
+#navmenu{margin:0em 2em 2em 0em;}
+#navmenu a:after{content:' '}
+
+/*version*/
+#versioninfo div{width:30em; text-align:center; margin:4em auto 1em auto;}
+#versioninfo a{font-style:none;} /* overrides italic for purpose of link */
+
+/*errors and debug*/
+.errors li {list-style:none;}

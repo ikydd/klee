@@ -1,0 +1,1 @@
+<a href='/admin/pictures/edit/<?php echo $picture->picture_id; ?>' class="picturelink"><?php echo $picture->title; ?></a>

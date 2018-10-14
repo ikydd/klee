@@ -1,0 +1,1 @@
+<option value="<?php echo $picture->picture_id; ?>"><?php echo $picture->title; ?></option>
